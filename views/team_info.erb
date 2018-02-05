@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/app.css">
+  </head>
+  <body>
+    <h1><%= params[:team_name] %></h1>
+    <ul>
+      <% @players.each do |player| %>
+        <li><%= player.position %>: <%= player.name %>.</li>
+      <% end %>
+    </ul>
+  <script src="/javascripts/app.js"></script>
+  </body>
+</html>
